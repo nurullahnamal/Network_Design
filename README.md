@@ -1,4 +1,4 @@
-# A-Yap-land-rmas-ve-Dinamik-Y-nlendirme
+# Ağ Yapılandırma
 Ağ Yapılandırması ve Dinamik Yönlendirme
 Tamamdır, şimdi bu show ip interface brief ve show ip route çıktılarını da README dosyasına ekleyelim. Bu, ağın durumunu ve yönlendirme tablosunu daha iyi anlamanıza yardımcı olacaktır.
 
