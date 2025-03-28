@@ -57,7 +57,7 @@ Aşağıda Router 1 (TELEKOMR1) için durum ve yönlendirme bilgileri bulunmakta
 Aşağıda her bir router'ın konfigürasyonlarının tamamı yer almaktadır.
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/R1-%20SHOW%20IP%20ROUTE.png)
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/R1-%20show%20ip%20interface%20brief.png)
-`
+
 enable <br>
 config terminal <br>
 interface fastethernet 0/0 <br>
@@ -66,7 +66,8 @@ no shutdown <br>
 interface fastethernet 0/1 <br>
 ip address 192.168.101.1 255.255.255.0 <br>
 no shutdown <br>
-`
+
+
 Show ip interface brief <br>
 
 router ospf 1 <br>
