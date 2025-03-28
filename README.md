@@ -58,9 +58,9 @@ Aşağıda her bir router'ın konfigürasyonlarının tamamı yer almaktadır.
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/R1-%20SHOW%20IP%20ROUTE.png)
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/R1-%20show%20ip%20interface%20brief.png)
 
-enable
-config terminal
-interface fastethernet 0/0
+enable <br>
+config terminal <br>
+interface fastethernet 0/0 <br>
 ip address 192.168.100.1 255.255.255.0 <br>
 no shutdown <br>
 interface fastethernet 0/1 <br>
@@ -114,32 +114,32 @@ ip address 1.1.2.1 255.255.255.0 <br>
 ppp multilink <br>
 ppp multilink group 2 <br>
 
-interface serial 2/0
-no ip address
-encapsualion ppp
-ppp multink
-ppp multink gorup 2
-no shutdown
+interface serial 2/0 <br>
+no ip address <br>
+encapsualion ppp <br>
+ppp multink <br>
+ppp multink gorup 2 <br>
+no shutdown <br>
 
-interface serial 2/1
-no ip address
-no shutdown
-encapsulation ppp
-ppp multinkiş
-ppp multink goup 2
+interface serial 2/1 <br>
+no ip address <br>
+no shutdown <br>
+encapsulation ppp <br>
+ppp multinkiş <br>
+ppp multink goup 2 <br>
 
-router ospf 1
-router-id 1.1.1.2
-network 1.1.1.0 0.0.0.255 area 0
-network 1.1.2.0 0.0.0.255 area 0
+router ospf 1 <br>
+router-id 1.1.1.2 <br>
+network 1.1.1.0 0.0.0.255 area 0 <br>
+network 1.1.2.0 0.0.0.255 area 0 <br>
 
-router bgp 100
-neigbor 6.6.6.2 remote-as 300
-neighbor 4.4.4.2 remote-as 200
-network 1.1.1.0 mask 255.255.255.0
-network 1.1.2.0 mask 255.255.255.0
-netowrk 4.4.4.0 mask 255.255.255.0
-netowrk 6.6.6.0 mask 255.255.255.0
+router bgp 100 <br>
+neigbor 6.6.6.2 remote-as 300 <br>
+neighbor 4.4.4.2 remote-as 200 <br>
+network 1.1.1.0 mask 255.255.255.0 <br>
+network 1.1.2.0 mask 255.255.255.0 <br>
+netowrk 4.4.4.0 mask 255.255.255.0 <br>
+netowrk 6.6.6.0 mask 255.255.255.0 <br>
 
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r3%20-%20show%20ip%20route.png)
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r3-%20show%20ip%20interface%20brief.png)
