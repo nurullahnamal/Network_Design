@@ -75,8 +75,8 @@ network 1.1.1.0 0.0.0.255 area 0
 network 192.168.100.0 0.0.0.255 area 0
 network 192.168.101.0 0.0.0.255 area 0
 exit
-
-
+![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r2%20-%20show%20ip%20route.png)
+![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r2-%20show%20ip%20interface%20brief.png)
 
 ### Router 2 (R2) Konfigürasyonu
 IGNORE_WHEN_COPYING_START
@@ -141,6 +141,9 @@ network 1.1.2.0 mask 255.255.255.0
 netowrk 4.4.4.0 mask 255.255.255.0
 netowrk 6.6.6.0 mask 255.255.255.0
 
+![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r3%20-%20show%20ip%20route.png)
+![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r3-%20show%20ip%20interface%20brief.png)
+
 ### Router 3 (R3) Konfigürasyonu
 IGNORE_WHEN_COPYING_START
 content_copy
@@ -186,6 +189,9 @@ network 192.168.103.0 0.0.0.255 area 0
 network 192.168.102.0 0.0.0.255 area 0
 end
 write
+
+![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r4%20-%20show%20ip%20route.png)
+![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r4%20-%20show%20ip%20interface%20brief.png)
 
 ### Router 4 (R4 - Superonline) Konfigürasyonu
 IGNORE_WHEN_COPYING_START
@@ -297,7 +303,8 @@ network 192.168.102.0 mask 255.255.255.0
 network 192.168.103.0 mask 255.255.255.0
 end
 write
-
+![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r5%20show%20ip%20route.png)
+![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r5%20show%20ip%20interface%20brief.png)
 ### Router 5 (R5) Konfigürasyonu
 IGNORE_WHEN_COPYING_START
 content_copy
@@ -347,6 +354,8 @@ network 2.2.1.0
 end
 write
 
+![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r6%20%20show%20ip%20interface%20brief.png)
+![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r6%20-%20show%20ip%20route.png)
 ### Router 6 (R6 - Vodafone) Konfigürasyonu
 IGNORE_WHEN_COPYING_START
 content_copy
@@ -445,13 +454,9 @@ router bgp 300
 network 10.10.101.0 mask 255.255.255.0
 network 10.100.100.0 mask 255.255.255.0
 end write
-
+![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r7%20-%20show%20ip%20interface%20brief.png)
+![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r7%20-%20show%20ip%20interface%20brief.png)
 ### Router 7 (R7) Konfigürasyonu
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-IGNORE_WHEN_COPYING_END
 
 enable conf termınal
 interface fastEthernet 0/0
@@ -474,6 +479,9 @@ network 3.3.2.0 0.0.0.255 area 10
 netowrk 3.3.3.0 0.0.0.255 area 10
 netowrk 10.100.100.0 0.0.0.255 area 10
 exit
+
+![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r8%20-%20show%20ip%20interface%20brief.png)
+![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r8%20-%20show%20ip%20route.png)
 
 ### Router 8 (R8) Konfigürasyonu
 IGNORE_WHEN_COPYING_START
@@ -505,6 +513,10 @@ netowrk 3.3.1.0 0.0.0.255 area 10
 netowrk 3.3.3.0 0.0.0.255 area 10
 network 10.10.101.0 0.0.0.255 area 10
 exit
+
+![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r9%20show%20bgp%20summary.png)
+![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r9%20show%20ip%20interface%20brief.png)
+![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r9%20show%20ip%20interface%20brief.png)
 
 ### Router 9 (R9) Konfigürasyonu
 IGNORE_WHEN_COPYING_START
@@ -552,12 +564,9 @@ ip route 172.16.0.0 255.255.0.0 11.11.11.2
 ip route 10.0.0.0 255.0.0.0 7.7.7.2
 ip route 0.0.0.0 0.0.0.0 192.168.2.1
 
+![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r10%20-show%20ip%20route.png)
+![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r10%20show%20ip%20interface%20brief.png)
 ### Router 10 (R10 - Müşteri Router'ı) Konfigürasyonu
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-IGNORE_WHEN_COPYING_END
 
 interface fastEthernet 0/0
 ip address 192.168.200.1 255.255.255.0
@@ -604,11 +613,7 @@ Bu projeye katkıda bulunmak için lütfen aşağıdaki adımları izleyin:
 ## Lisans
 
 Bu depo MIT lisansı altında yayınlanmıştır. Daha fazla bilgi için [LICENSE](LICENSE) dosyasına bakın.
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-IGNORE_WHEN_COPYING_END
+
 
 Bu güncellenmiş README.md dosyası, tüm router konfigürasyonlarını ve show ip interface brief ile show ip route çıktısını içermektedir. Bu, depoyu kullanan kişilere daha kapsamlı bir genel bakış sunacaktır.
 
