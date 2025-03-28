@@ -61,58 +61,58 @@ Aşağıda her bir router'ın konfigürasyonlarının tamamı yer almaktadır.
 enable
 config terminal
 interface fastethernet 0/0
-ip address 192.168.100.1 255.255.255.0
-no shutdown
-interface fastethernet 0/1
-ip address 192.168.101.1 255.255.255.0
-no shutdown
-Show ip interface brief
+ip address 192.168.100.1 255.255.255.0 <br>
+no shutdown <br>
+interface fastethernet 0/1 <br>
+ip address 192.168.101.1 255.255.255.0 <br>
+no shutdown <br>
+Show ip interface brief <br>
 
-router ospf 1
-router-id 1.1.1.1
-network 1.1.1.0 0.0.0.255 area 0
-network 192.168.100.0 0.0.0.255 area 0
-network 192.168.101.0 0.0.0.255 area 0
+router ospf 1 <br>
+router-id 1.1.1.1 <br>
+network 1.1.1.0 0.0.0.255 area 0 <br>
+network 192.168.100.0 0.0.0.255 area 0 <br>
+network 192.168.101.0 0.0.0.255 area 0 <br>
 exit
 
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r2%20-%20show%20ip%20route.png)
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r2-%20show%20ip%20interface%20brief.png)
 
-### Router 2 (R2) Konfigürasyonu
+### Router 2 (R2) Konfigürasyonu 
 IGNORE_WHEN_COPYING_START
 content_copy
 download
 Use code with caution.
 IGNORE_WHEN_COPYING_END
 
-enable
-config terminal
-interface multilink 1
-no shutdown
-ip address 1.1.1.2 255.255.255.0
-ppp multilink
-ppp multilink group 1
-exit
+enable <br>
+config terminal <br>
+interface multilink 1 <br>
+no shutdown <br>
+ip address 1.1.1.2 255.255.255.0 <br>
+ppp multilink <br>
+ppp multilink group 1 <br>
+exit <br>
 
-interface serial 2/2
+interface serial 2/2 <br>
+no ip address <br>
+no shut down <br>
+encapsulation ppp <br>
+ppp multinlik <br>
+ppp multinlk group 1  <br>
+
+interface serial 2/3 <br>
 no ip address
-no shut down
-encapsulation ppp
-ppp multinlik
-ppp multinlk group 1
+no shut down <br>
+encapsulation ppp <br>
+ppp multinlik <br>
+ppp multinlk group 1 <br>
 
-interface serial 2/3
-no ip address
-no shut down
-encapsulation ppp
-ppp multinlik
-ppp multinlk group 1
-
-interface multilink 2
-no shutdown
-ip address 1.1.2.1 255.255.255.0
-ppp multilink
-ppp multilink group 2
+interface multilink 2 <br>
+no shutdown <br>
+ip address 1.1.2.1 255.255.255.0 <br> 
+ppp multilink <br>
+ppp multilink group 2 <br>
 
 interface serial 2/0
 no ip address
