@@ -153,44 +153,44 @@ download
 Use code with caution.
 IGNORE_WHEN_COPYING_END
 
-interface multilink 1
-ip address 1.1.2.2 255.255.255.0
-no shotdown
-ppp multink
-ppp multinlk group 1
+interface multilink 1 <br>
+ip address 1.1.2.2 255.255.255.0 <br>
+no shotdown <br>
+ppp multink <br>
+ppp multinlk group 1 <br>
 
-interface serial 2/0
-no shutdown
-no ip address
-encalsupaion ppp
-ppp multink
-ppp multink group 1
-exit
+interface serial 2/0 <br>
+no shutdown <br>
+no ip address <br>
+encalsupaion ppp <br>
+ppp multink <br>
+ppp multink group 1 <br>
+exit <br>
 
-interface serial 2/1
-no shutdown
-no ip address
-encapsulation ppp
-ppp multilink
-ppp multink gropu 1
+interface serial 2/1 <br>
+no shutdown <br>
+no ip address <br>
+encapsulation ppp <br>
+ppp multilink <br>
+ppp multink gropu 1 <br>
 
-interface fastEthernet 0/0
-ip addres 192.168.103.1 255.255.255.0
-no shutdown
-exit
+interface fastEthernet 0/0 <br>
+ip addres 192.168.103.1 255.255.255.0 <br>
+no shutdown <br>
+exit <br>
 
-interface fastEthernet 0/1
-ip addres 192.168.102.1 255.255.255.0
-no shutdown
-exit
-
-router ospf 1
-router-id 1.1.1.3
-network 1.1.2.0 0.0.0.255 area 0
-network 192.168.103.0 0.0.0.255 area 0
-network 192.168.102.0 0.0.0.255 area 0
-end
-write
+interface fastEthernet 0/1 <br>
+ip addres 192.168.102.1 255.255.255.0 <br>
+no shutdown <br>
+exit <br>
+  
+router ospf 1 <br>
+router-id 1.1.1.3 <br>
+network 1.1.2.0 0.0.0.255 area 0 <br>
+network 192.168.103.0 0.0.0.255 area 0 <br>
+network 192.168.102.0 0.0.0.255 area 0 <br>
+end <br>
+write <br>
 
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r4%20-%20show%20ip%20route.png)
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r4%20-%20show%20ip%20interface%20brief.png)
@@ -202,79 +202,79 @@ download
 Use code with caution.
 IGNORE_WHEN_COPYING_END
 
-interface multink 1
-no shutdown
-no ip address
-ip address 2.2.1.1 255.255.255.0
-pp multink
-ppp multink grop 1
+interface multink 1 <br>
+no shutdown <br>
+no ip address <br>
+ip address 2.2.1.1 255.255.255.0 <br>
+pp multink <br>
+ppp multink grop 1 <br>
 
-interface serial 2/0
-no ip address
-no shurdown
-encapsulation ppp
-ppp multilink
-ppp multilnk group 1
-exit
+interface serial 2/0 <br>
+no ip address <br>
+no shurdown <br>
+encapsulation ppp <br>
+ppp multilink <br>
+ppp multilnk group 1 <br>
+exit <br>
 
-interface serial 2/1
-no ip address
-no shudown
-encapsualion ppp
-ppp multilink
-ppp multink group 1
+interface serial 2/1 <br>
+no ip address <br>
+no shudown <br>
+encapsualion ppp <br>
+ppp multilink <br> 
+ppp multink group 1 <br>
 
-interface multilink 2
-no ip address
-no shutdown
-ip address 4.4.4.2 255.255.255.0
-ppp multink
-ppp multink group 2
-exit
+interface multilink 2 <br>
+no ip address <br>
+no shutdown <br>
+ip address 4.4.4.2 255.255.255.0 <br>
+ppp multink <br> 
+ppp multink group 2 <br>
+exit <br>
 
-interface serial 3/0
-no shutdown
-no ip address
-encapsualtion ppp
-ppp mutlink
-ppp multink group 2
-exit
+interface serial 3/0 <br>
+no shutdown <br>
+no ip address <br>
+encapsualtion ppp <br>
+ppp mutlink <br>
+ppp multink group 2 <br>
+exit <br>
 
-interface serial 3/1
-no shutdown
-no ip address
-encapsualtion ppp
-ppp mutlink
-ppp multink group 2
-exit
+interface serial 3/1 <br>
+no shutdown <br>
+no ip address <br>
+encapsualtion ppp <br>
+ppp mutlink <br>
+ppp multink group 2 <br>
+exit <br>
 
-interface multilink 3
-no shutdown
-no ip address
-ip address 5.5.5.1 255.255.255.0
-ppp multink
-ppp multink group 3
+interface multilink 3 <br>
+no shutdown <br> 
+no ip address <br>
+ip address 5.5.5.1 255.255.255.0 <br>
+ppp multink <br>
+ppp multink group 3 <br>
 
-interface serial 2/2
-no shutdown
-no ip address
-encapsulation ppp
-ppp multink
-ppp mutlink group 3
-exit
+interface serial 2/2 <br>
+no shutdown <br>
+no ip address <br>
+encapsulation ppp <br>
+ppp multink <br>
+ppp mutlink group 3 <br>
+exit <br>
+ 
+interface serial 2/3 <br>
+no ip address <br>
+no shutdown <br>
+encapsualion ppp <br> 
+ppp mutlink <br>
+ppp multink group 3 <br>
 
-interface serial 2/3
-no ip address
-no shutdown
-encapsualion ppp
-ppp mutlink
-ppp multink group 3
-
-router eigrp 1
-eigrp router-id 1.1.1.6
-network 5.5.5.0
-network 4.4.4.0
-network 2.2.1.0
+router eigrp 1 <br>
+eigrp router-id 1.1.1.6 <br>
+network 5.5.5.0 <br>
+network 4.4.4.0 <br>
+network 2.2.1.0 <br>
 
 router bgp 200
 neighbor 4.4.4.1 remote-as 100
