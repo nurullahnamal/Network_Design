@@ -48,63 +48,14 @@ Aşağıda Router 1 (TELEKOMR1) için durum ve yönlendirme bilgileri bulunmakta
 ### Router 1 (TELEKOMR1) - Arayüz Özeti
 
 
-TELEKOMR1#SHOW ip interface brief
-Interface IP-Address OK? Method Status Protocol
-FastEthernet0/0 192.168.100.1 YES manual up up
-FastEthernet0/1 192.168.101.1 YES manual up up
-FastEthernet1/0 unassigned YES unset administratively down down
-Serial2/0 unassigned YES unset administratively down down
-Serial2/1 unassigned YES unset administratively down down
-Serial2/2 unassigned YES manual up up
-Serial2/3 unassigned YES manual up up
-Multilink1 1.1.1.1 YES manual up up
 
-### Router 1 (TELEKOMR1) - Yönlendirme Tablosu
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-IGNORE_WHEN_COPYING_END
 
-TELEKOMR1#show ip route
-Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
-D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
-N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
-E1 - OSPF external type 1, E2 - OSPF external type 2
-i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
-ia - IS-IS inter area, * - candidate default, U - per-user static route
-o - ODR, P - periodic downloaded static route
 
-Gateway of last resort is 1.1.1.2 to network 0.0.0.0
-
-1.0.0.0/8 is variably subnetted, 3 subnets, 2 masks
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-IGNORE_WHEN_COPYING_END
-
-C 1.1.1.0/24 is directly connected, Multilink1
-C 1.1.2.0/24 [110/64] via 1.1.1.2, 05:42:18, Multilink1
-C 1.1.1.2/32 is directly connected, Multilink1
-9.0.0.0/24 is subnetted, 1 subnets
-O 9.9.9.0 [110/96] via 1.1.1.2, 05:42:18, Multilink1
-O 192.168.102.0/24 [110/74] via 1.1.1.2, 05:42:18, Multilink1
-O 192.168.103.0/24 [110/74] via 1.1.1.2, 05:42:18, Multilink1
-C 192.168.100.0/24 is directly connected, FastEthernet0/0
-C 192.168.101.0/24 is directly connected, FastEthernet0/1
-O*E2 0.0.0.0/0 [110/1] via 1.1.1.2, 05:40:55, Multilink1
 
 ## Konfigürasyon Örnekleri
 
 Aşağıda her bir router'ın konfigürasyonlarının tamamı yer almaktadır.
 
-### Router 1 (R1) Konfigürasyonu
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-IGNORE_WHEN_COPYING_END
 
 enable
 config terminal
