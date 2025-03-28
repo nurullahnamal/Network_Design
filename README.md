@@ -50,7 +50,7 @@ Aşağıda Router 1 (TELEKOMR1) için durum ve yönlendirme bilgileri bulunmakta
 
 
 
-
+https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/e3c1d81191116244c92df278002abee175d26f4f/Topoloji.png
 
 ## Konfigürasyon Örnekleri
 
