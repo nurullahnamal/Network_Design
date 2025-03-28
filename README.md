@@ -50,12 +50,14 @@ Aşağıda Router 1 (TELEKOMR1) için durum ve yönlendirme bilgileri bulunmakta
 
 
 
-![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/e3c1d81191116244c92df278002abee175d26f4f/Topoloji.png) 
+![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/e3c1d81191116244c92df278002abee175d26f4f/Topoloji.png)
 
 ## Konfigürasyon Örnekleri
 
 Aşağıda her bir router'ın konfigürasyonlarının tamamı yer almaktadır.
-
+![image alt]()
+![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/R1-%20SHOW%20IP%20ROUTE.png)
+![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/R1-%20show%20ip%20interface%20brief.png)
 
 enable
 config terminal
@@ -73,6 +75,8 @@ network 1.1.1.0 0.0.0.255 area 0
 network 192.168.100.0 0.0.0.255 area 0
 network 192.168.101.0 0.0.0.255 area 0
 exit
+
+
 
 ### Router 2 (R2) Konfigürasyonu
 IGNORE_WHEN_COPYING_START
