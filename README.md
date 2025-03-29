@@ -1,12 +1,47 @@
-# Ağ Yapılandırma
+# Ağ Yapılandırması
 Ağ Yapılandırması ve Dinamik Yönlendirme
-Tamamdır, şimdi bu show ip interface brief ve show ip route çıktılarını da README dosyasına ekleyelim. Bu, ağın durumunu ve yönlendirme tablosunu daha iyi anlamanıza yardımcı olacaktır.
 
-İşte güncellenmiş README.md dosyası:
 
 # Ağ Topolojisi ve Yapılandırma Deposu
+Bu yapılandırma dosyası, farklı yönlendirme protokolleri ve ağ servislerini içeren bir ağ topolojisini tanımlar. İçerikte BGP, OSPF, EIGRP, PPPoE, CHAP ve Multilink gibi önemli ağ protokolleri bulunmaktadır.
 
-Bu depo, çoklu bağlantı (multilink) teknolojisi, OSPF, EIGRP ve BGP protokolleri kullanılarak yapılandırılmış bir ağın topolojisini ve tüm router konfigürasyonlarını içerir. Amacımız, ağ tasarımını ve konfigürasyonunu paylaşarak, ağ mühendisleri ve öğrencilerin bu konularda bilgi edinmelerine yardımcı olmaktır.
+İçerik Başlıkları
+1. Ağ Yapılandırması (Network Configuration)
+Tanımlanan IP ağları ve subnet mask bilgileri
+
+2. BGP (Border Gateway Protocol) Yapılandırması
+BGP yönlendirme protokolü
+
+Otonom sistemler (AS) arasında bağlantılar
+
+Komşu (neighbor) yapılandırmaları
+
+3. OSPF (Open Shortest Path First) Yapılandırması
+OSPF yönlendirme protokolü
+
+Alan (area) bazlı yönlendirme
+
+4. EIGRP (Enhanced Interior Gateway Routing Protocol) Yapılandırması
+EIGRP protokolü ile ağ yönlendirme
+
+IPv4 adresleme ve statik yönlendirme
+
+5. Arabirim (Interface) Yapılandırması
+Seri port ve Ethernet arayüzü yapılandırmaları
+
+IP adresleme ve yönlendirme
+
+6. PPPoE (Point-to-Point Protocol over Ethernet) Yapılandırması
+PPPoE bağlantıları ve kullanıcı doğrulama
+
+7. CHAP (Challenge Handshake Authentication Protocol) Kullanımı
+CHAP kimlik doğrulama mekanizması ile güvenli bağlantılar
+
+8. Multilink Yapılandırması
+MLPPP (Multilink PPP) ile birden fazla bağlantının tek bir mantıksal bağlantı olarak kullanılması
+
+
+
 
 ## İçerik
 
