@@ -12,9 +12,8 @@ Tanımlanan IP ağları ve subnet mask bilgileri
 # 2. BGP (Border Gateway Protocol) Yapılandırması
 BGP yönlendirme protokolü
 
-#  Otonom sistemler (AS) arasında bağlantılar
-
-# Komşu (neighbor) yapılandırmaları
+ Otonom sistemler (AS) arasında bağlantılar
+ Komşu (neighbor) yapılandırmaları
 
 # 3. OSPF (Open Shortest Path First) Yapılandırması
 OSPF yönlendirme protokolü
@@ -39,16 +38,6 @@ CHAP kimlik doğrulama mekanizması ile güvenli bağlantılar
 # 8. Multilink Yapılandırması
 MLPPP (Multilink PPP) ile birden fazla bağlantının tek bir mantıksal bağlantı olarak kullanılması
 
-
-
-
-## İçerik
-
-Bu depo aşağıdaki içeriği içerir:
-
-*   **README.md:** Bu dosya, genel bilgiler, topoloji açıklaması ve katkıda bulunma yönergeleri içerir.
-*   **router-configs/:** Her router için ayrı ayrı yapılandırma dosyalarını içeren bir dizin.
-*   **network_topology.png:** Ağın görsel topolojisini gösteren bir resim.
 
 ## Ağ Topolojisi
 
