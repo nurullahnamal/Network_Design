@@ -6,38 +6,37 @@ Ağ Yapılandırması ve Dinamik Yönlendirme
 Bu yapılandırma dosyası, farklı yönlendirme protokolleri ve ağ servislerini içeren bir ağ topolojisini tanımlar. İçerikte BGP, OSPF, EIGRP, PPPoE, CHAP ve Multilink gibi önemli ağ protokolleri bulunmaktadır.
 
 İçerik Başlıkları
-1. Ağ Yapılandırması (Network Configuration)
+#  1. Ağ Yapılandırması (Network Configuration)
 Tanımlanan IP ağları ve subnet mask bilgileri
 
-2. BGP (Border Gateway Protocol) Yapılandırması
+# 2. BGP (Border Gateway Protocol) Yapılandırması
 BGP yönlendirme protokolü
 
-Otonom sistemler (AS) arasında bağlantılar
+#  Otonom sistemler (AS) arasında bağlantılar
 
-Komşu (neighbor) yapılandırmaları
+# Komşu (neighbor) yapılandırmaları
 
-3. OSPF (Open Shortest Path First) Yapılandırması
+# 3. OSPF (Open Shortest Path First) Yapılandırması
 OSPF yönlendirme protokolü
-
 Alan (area) bazlı yönlendirme
 
-4. EIGRP (Enhanced Interior Gateway Routing Protocol) Yapılandırması
+# 4. EIGRP (Enhanced Interior Gateway Routing Protocol) Yapılandırması
 EIGRP protokolü ile ağ yönlendirme
 
 IPv4 adresleme ve statik yönlendirme
 
-5. Arabirim (Interface) Yapılandırması
+# 5. Arabirim (Interface) Yapılandırması
 Seri port ve Ethernet arayüzü yapılandırmaları
 
 IP adresleme ve yönlendirme
 
-6. PPPoE (Point-to-Point Protocol over Ethernet) Yapılandırması
+# 6. PPPoE (Point-to-Point Protocol over Ethernet) Yapılandırması
 PPPoE bağlantıları ve kullanıcı doğrulama
 
-7. CHAP (Challenge Handshake Authentication Protocol) Kullanımı
+# 7. CHAP (Challenge Handshake Authentication Protocol) Kullanımı
 CHAP kimlik doğrulama mekanizması ile güvenli bağlantılar
 
-8. Multilink Yapılandırması
+# 8. Multilink Yapılandırması
 MLPPP (Multilink PPP) ile birden fazla bağlantının tek bir mantıksal bağlantı olarak kullanılması
 
 
