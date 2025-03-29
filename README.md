@@ -127,8 +127,8 @@ interface serial 2/1 <br>
 no ip address <br>
 no shutdown <br>
 encapsulation ppp <br>
-ppp multinkiş <br>
-ppp multink goup 2 <br>
+ppp multilink <br>
+ppp multilink group 2 <br>
 
 router ospf 1 <br>
 router-id 1.1.1.2 <br>
@@ -156,15 +156,15 @@ IGNORE_WHEN_COPYING_END
 interface multilink 1 <br>
 ip address 1.1.2.2 255.255.255.0 <br>
 no shotdown <br>
-ppp multink <br>
-ppp multinlk group 1 <br>
+ppp multilink <br>
+ppp multilink group 1 <br>
 
 interface serial 2/0 <br>
 no shutdown <br>
 no ip address <br>
 encapsulation ppp <br>
-ppp multink <br>
-ppp multink group 1 <br>
+ppp multilink <br>
+ppp multilink group 1 <br>
 exit <br>
 
 interface serial 2/1 <br>
@@ -172,7 +172,7 @@ no shutdown <br>
 no ip address <br>
 encapsulation ppp <br>
 ppp multilink <br>
-ppp multink gropu 1 <br>
+ppp multilink gropu 1 <br>
 
 interface fastEthernet 0/0 <br>
 ip addres 192.168.103.1 255.255.255.0 <br>
@@ -206,15 +206,15 @@ interface multink 1 <br>
 no shutdown <br>
 no ip address <br>
 ip address 2.2.1.1 255.255.255.0 <br>
-pp multink <br>
-ppp multink grop 1 <br>
+pp multilink <br>
+ppp multilink grop 1 <br>
 
 interface serial 2/0 <br>
 no ip address <br>
 no shurdown <br>
 encapsulation ppp <br>
 ppp multilink <br>
-ppp multilnk group 1 <br>
+ppp multilink group 1 <br>
 exit <br>
 
 interface serial 2/1 <br>
@@ -222,53 +222,53 @@ no ip address <br>
 no shudown <br>
 encapsulation ppp <br>
 ppp multilink <br> 
-ppp multink group 1 <br>
+ppp multilink group 1 <br>
 
 interface multilink 2 <br>
 no ip address <br>
 no shutdown <br>
 ip address 4.4.4.2 255.255.255.0 <br>
-ppp multink <br> 
-ppp multink group 2 <br>
+ppp multilink <br> 
+ppp multilink group 2 <br>
 exit <br>
 
 interface serial 3/0 <br>
 no shutdown <br>
 no ip address <br>
 encapsulation ppp <br>
-ppp mutlink <br>
-ppp multink group 2 <br>
+ppp multilink <br>
+ppp multilink group 2 <br>
 exit <br>
 
 interface serial 3/1 <br>
 no shutdown <br>
 no ip address <br>
 encapsulation ppp <br>
-ppp mutlink <br>
-ppp multink group 2 <br>
+ppp multilink <br>
+ppp multilink group 2 <br>
 exit <br>
 
 interface multilink 3 <br>
 no shutdown <br> 
 no ip address <br>
 ip address 5.5.5.1 255.255.255.0 <br>
-ppp multink <br>
-ppp multink group 3 <br>
+ppp multilink <br>
+ppp multilink group 3 <br>
 
 interface serial 2/2 <br>
 no shutdown <br>
 no ip address <br>
 encapsulation ppp <br>
-ppp multink <br>
-ppp mutlink group 3 <br>
+ppp multilink <br>
+ppp multilink group 3 <br>
 exit <br>
  
 interface serial 2/3 <br>
 no ip address <br>
 no shutdown <br>
 encapsulation ppp <br> 
-ppp mutlink <br>
-ppp multink group 3 <br>
+ppp multilink <br>
+ppp multilink group 3 <br>
 
 router eigrp 1 <br>
 eigrp router-id 1.1.1.6 <br>
@@ -290,7 +290,7 @@ exit
 
 router bgp 200
 neighbor 11.11.11.1 remote-as 500
-netowrk 11.11.11.0 mask 255.255.255.0
+network 11.11.11.0 mask 255.255.255.0
 exit
 
 router eigrp 10
@@ -317,7 +317,7 @@ IGNORE_WHEN_COPYING_END
 enable
 conf, termnianl
 interface fastEthernet 0/0
-no shurdown
+no shutdown
 ip address 172.16.100.1 255.255.255.0
 exit
 
@@ -331,21 +331,21 @@ no shutdown
 no ip address
 ip address 2.2.1.2 255.255.255.0
 ppp multilink
-ppp multink group 1
+ppp multilink group 1
 
 inteface serial 2/0
 no shutdown
 no ip address
 encapsulation ppp
-ppp multilkink
-ppp multink gruop 1
+ppp multilink
+ppp multilink gruop 1
 
 interface serial 2/1
 no shutdown
 no ip address
 encapsulation ppp
-ppp multink
-ppp multink group 1
+ppp multilink
+ppp multilink group 1
 
 router eigrp 1
 eigrp router-id 1.1.1.5
@@ -389,37 +389,37 @@ no shutdown
 no ip address
 encapsulation ppp
 ppp multilink
-ppp multink group 1
+ppp multilink group 1
 exit
 
 interface serial 2/3
 no shutdown
 no ip address
 encapsulation ppp
-ppp mulitnk
-ppp muıltink group 1
+ppp multilink
+ppp multilink group 1
 exit
 
 interface multilink 2
 no shutdwon
 ip address 5.5.5.2 255.2555.255.0
-pp multink
-ppp multşink group 2
+pp multilink
+ppp multilink group 2
 exit
 
 interface serial 3/0
 no ip address
 no shutdown
 encapsulation ppp
-ppp multink
-ppp multinlk grop 2
+ppp multilink
+ppp multilink grop 2
 
 interface serial 3/1
 no ip address
 no shutdown
 encapsulation ppp
-ppp multink
-ppp multinlk grop 2
+ppp multilink
+ppp multilink grop 2
 
 router ospf 1
 router-id 1.1.1.6
@@ -466,7 +466,7 @@ no shutdown
 ip addres 10.100.100.1 255.255.255.0
 exit
 interface serial 2/0
-no shutdwo
+no shutdown
 ip addres 3.3.2.2 255.255.255.0
 exit
 
@@ -544,7 +544,6 @@ ip addres 11.11.11.1 255.255.255.0
 exit
 
 configure termainal
-
 interface fastEthernet 0/0
 ip address 192.168.1.210 255.255.255.0
 no shutdown
