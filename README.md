@@ -81,11 +81,6 @@ exit
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r2-%20show%20ip%20interface%20brief.png)
 
 ### Router 2 (R2) Konfigürasyonu 
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-IGNORE_WHEN_COPYING_END
 
 enable <br>
 configure terminal <br>
@@ -147,11 +142,6 @@ netowrk 6.6.6.0 mask 255.255.255.0 <br>
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r3-%20show%20ip%20interface%20brief.png)
 
 ### Router 3 (R3) Konfigürasyonu
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-IGNORE_WHEN_COPYING_END
 
 interface multilink 1 <br>
 ip address 1.1.2.2 255.255.255.0 <br>
@@ -196,11 +186,6 @@ write <br>
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r4%20-%20show%20ip%20interface%20brief.png)
 
 ### Router 4 (R4 - Superonline) Konfigürasyonu
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-IGNORE_WHEN_COPYING_END
 
 interface multink 1 <br>
 no shutdown <br>
@@ -308,11 +293,6 @@ write <br>
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r5%20show%20ip%20route.png)
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r5%20show%20ip%20interface%20brief.png)
 ### Router 5 (R5) Konfigürasyonu
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-IGNORE_WHEN_COPYING_END
 
 enable <br>
 configure terminal  <br>
@@ -358,11 +338,6 @@ write <br>
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r6%20%20show%20ip%20interface%20brief.png)
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r6%20-%20show%20ip%20route.png)
 ### Router 6 (R6 - Vodafone) Konfigürasyonu
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-IGNORE_WHEN_COPYING_END
 
 enable <br>
 configure terminal <br>
@@ -486,11 +461,6 @@ exit <br>
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r8%20-%20show%20ip%20route.png)
 
 ### Router 8 (R8) Konfigürasyonu
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-IGNORE_WHEN_COPYING_END
 
 enable  <br>
 configure terminal  <br>
@@ -521,11 +491,6 @@ exit <br>
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r9%20show%20ip%20interface%20brief.png)
 
 ### Router 9 (R9) Konfigürasyonu
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-IGNORE_WHEN_COPYING_END
 
 configure  terminal <br>
 interfaca serial 2/2 <br>
