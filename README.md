@@ -275,36 +275,36 @@ eigrp router-id 1.1.1.6 <br>
 network 5.5.5.0 <br>
 network 4.4.4.0 <br>
 network 2.2.1.0 <br>
+  
+router bgp 200 <br>
+neighbor 4.4.4.1 remote-as 100 <br>
+neighbor 5.5.5.2 remote-as 300 <br>
+network 5.5.5.0 mask 255.255.255.0 <br>
+network 4.4.4.0 mask 255.255.255.0 <br>
+network 2.2.1.0 mask 255.255.255.0 <br>
 
-router bgp 200
-neighbor 4.4.4.1 remote-as 100
-neighbor 5.5.5.2 remote-as 300
-network 5.5.5.0 mask 255.255.255.0
-network 4.4.4.0 mask 255.255.255.0
-network 2.2.1.0 mask 255.255.255.0
+interface serial 3/2 <br>
+no shutdown <br>
+ip address 11.11.11.2 255.255.255.0 <br>
+exit <br>
 
-interface serial 3/2
-no shutdown
-ip address 11.11.11.2 255.255.255.0
-exit
+router bgp 200 <br>
+neighbor 11.11.11.1 remote-as 500 <br>
+network 11.11.11.0 mask 255.255.255.0 <br>
+exit <br>
+ 
+router eigrp 10 <br>
+network 11.11.11.0 <br>
+address-amily ipv4 <br>
+redistribute static  <br>
 
-router bgp 200
-neighbor 11.11.11.1 remote-as 500
-network 11.11.11.0 mask 255.255.255.0
-exit
-
-router eigrp 10
-network 11.11.11.0
-address-amily ipv4
-redistribute static
-
-reouter bgp 100
-network 192.168.100.0 mask 255.255.255.0
-network 192.168.101.0 mask 255.255.255.0
-network 192.168.102.0 mask 255.255.255.0
-network 192.168.103.0 mask 255.255.255.0
-end
-write
+reouter bgp 100 <br>
+network 192.168.100.0 mask 255.255.255.0 <br>
+network 192.168.101.0 mask 255.255.255.0 <br> 
+network 192.168.102.0 mask 255.255.255.0 <br>
+network 192.168.103.0 mask 255.255.255.0 <br>
+end <br>
+write <br>
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r5%20show%20ip%20route.png)
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r5%20show%20ip%20interface%20brief.png)
 ### Router 5 (R5) Konfigürasyonu
@@ -314,47 +314,46 @@ download
 Use code with caution.
 IGNORE_WHEN_COPYING_END
 
-enable
-conf, termnianl
-interface fastEthernet 0/0
-no shutdown
-ip address 172.16.100.1 255.255.255.0
-exit
+enable <br>
+configure terminal  <br>
+interface fastEthernet 0/0 <br>
+no shutdown <br>
+ip address 172.16.100.1 255.255.255.0 <br>
+exit <br>
 
-interface fastEthernet 0/1
-no shutdown
-ip address 172.16.101.1 255.255.255.0
-exit
+interface fastEthernet 0/1 <br>
+no shutdown <br>
+ip address 172.16.101.1 255.255.255.0 <br>
+exit <br>
 
-interface multilink 1
-no shutdown
-no ip address
-ip address 2.2.1.2 255.255.255.0
-ppp multilink
-ppp multilink group 1
+interface multilink 1 <br>
+no shutdown v
+no ip address <br>
+ip address 2.2.1.2 255.255.255.0 <br>
+ppp multilink <br>
+ppp multilink group 1 <br>
 
-inteface serial 2/0
-no shutdown
-no ip address
-encapsulation ppp
-ppp multilink
-ppp multilink gruop 1
+inteface serial 2/0 <br>
+no shutdown <br>
+no ip address <br>
+encapsulation ppp <br>
+ppp multilink <br>
+ppp multilink gruop 1 <br>
 
-interface serial 2/1
-no shutdown
-no ip address
-encapsulation ppp
-ppp multilink
-ppp multilink group 1
+interface serial 2/1 <br>
+no shutdown <br> 
+no ip address <br>
+encapsulation ppp <br>
+ppp multilink <br>
+ppp multilink group 1 <br>
 
-router eigrp 1
-eigrp router-id 1.1.1.5
-
-network 172.16.101.0
-network 172.16.100.0
-network 2.2.1.0
-end
-write
+router eigrp 1<br>
+eigrp router-id 1.1.1.5 <br>
+network 172.16.101.0 <br>
+network 172.16.100.0 <br>
+network 2.2.1.0 <br>
+end <br>
+write <br>
 
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r6%20%20show%20ip%20interface%20brief.png)
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r6%20-%20show%20ip%20route.png)
@@ -365,89 +364,89 @@ download
 Use code with caution.
 IGNORE_WHEN_COPYING_END
 
-enable, conf ter
+enable <br>
+configure terminal <br>
+interface serial 2/0 <br>
+no shutdown <br>
+ip address 3.3.2.1 255.255.255.0 <br>
+exit <br>
 
-interface serial 2/0
-no shutdown
-ip address 3.3.2.1 255.255.255.0
-exit
+interface serial 2/1 <br>
+no shutdown <br>
+ip address 3.3.1.1 255.255.255.0 <br>
+exit <br>
 
-interface serial 2/1
-no shutdown
-ip address 3.3.1.1 255.255.255.0
-exit
+interface multilink 1 <br>
+no shutdown <br>
+ip address 6.6.6.2 255.255.255.0 v
+ppp multilink <br>
+ppp multilink gorup 1 <br>
+exit <br>
 
-interface multilink 1
-no shutdown
-ip address 6.6.6.2 255.255.255.0
-ppp multilink
-ppp multilink gorup 1
-exit
+interface serial 2/2 <br>
+no shutdown <br>
+no ip address <br>
+encapsulation ppp <br>
+ppp multilink <br>
+ppp multilink group 1 <br>
+exit <br>
 
-interface serial 2/2
-no shutdown
-no ip address
-encapsulation ppp
-ppp multilink
-ppp multilink group 1
-exit
+interface serial 2/3 <br>
+no shutdown <br>
+no ip address <br>
+encapsulation ppp <br>
+ppp multilink <br>
+ppp multilink group 1 <br>
+exit <br>
 
-interface serial 2/3
-no shutdown
-no ip address
-encapsulation ppp
-ppp multilink
-ppp multilink group 1
-exit
+interface multilink 2 <br>
+no shutdown <br>
+ip address 5.5.5.2 255.2555.255.0  <br>
+ppp multilink <br>
+ppp multilink group 2 <br>
+exit <br>
 
-interface multilink 2
-no shutdwon
-ip address 5.5.5.2 255.2555.255.0
-pp multilink
-ppp multilink group 2
-exit
+interface serial 3/0 v
+no ip address <br>
+no shutdown <br>
+encapsulation ppp <br>
+ppp multilink <br>
+ppp multilink group 2 <br>
 
-interface serial 3/0
-no ip address
-no shutdown
-encapsulation ppp
-ppp multilink
-ppp multilink grop 2
-
-interface serial 3/1
-no ip address
-no shutdown
-encapsulation ppp
-ppp multilink
-ppp multilink grop 2
-
-router ospf 1
-router-id 1.1.1.6
-network 6.6.6.0 0.0.0.255 area 10
-network 5.5.5.0 0.0.0.255 area 10
-network 3.3.1.0 0.0.0.255 area 10
-network 3.3.2.2 0.0.0.255 area 10
-
-router bgp 300
-neighbor 5.5.5.1 remote-as 200
-neighbor 6.6.6.1 remote-as 100
-network 6.6.6.0 mask 255.255.255.0
-network 5.5.5.0 mask 255.255.255.0
-network 3.3.2.0 mask 255.255.255.0
-network 3.3.1.0 mask 255.255.255.0
-
-interface serial 3/2
-no shutdown
-ip addres 7.7.7.2 255.255.255.0
-exit
+interface serial 3/1 <br>
+no ip address <br>
+no shutdown <br>
+encapsulation ppp <br>
+ppp multilink <br> 
+ppp multilink group 2 <br>
 
 router ospf 1 <br>
-network 7.7.7.0 0.0.0.255 <br>
-default-information originate <br>
-router bgp 1 <br>
-neighbor 7.7.7.1 remote-as 500 <br>
-network 7.7.7.0 mask 255.255.255.0 <br>
+router-id 1.1.1.6 <br>
+network 6.6.6.0 0.0.0.255 area 10 <br>
+network 5.5.5.0 0.0.0.255 area 10 <br>
+network 3.3.1.0 0.0.0.255 area 10 <br>
+network 3.3.2.2 0.0.0.255 area 10 <br>
+
+router bgp 300 <br>
+neighbor 5.5.5.1 remote-as 200 <br>
+neighbor 6.6.6.1 remote-as 100 <br>
+network 6.6.6.0 mask 255.255.255.0 <br>
+network 5.5.5.0 mask 255.255.255.0 <br>
+network 3.3.2.0 mask 255.255.255.0 <br>
+network 3.3.1.0 mask 255.255.255.0 <br>
+
+interface serial 3/2 <br>
+no shutdown <br>
+ip addres 7.7.7.2 255.255.255.0 <br>
 exit <br>
+ 
+router ospf 1 <br>
+network 7.7.7.0 0.0.0.255 <br> <br>
+default-information originate <br> <br>
+router bgp 1 <br>
+neighbor 7.7.7.1 remote-as 500 <br> <br>
+network 7.7.7.0 mask 255.255.255.0 <br> <br>
+exit <br> <br>
 
 ip route 0.0.0.0 0.0.0.0 7.7.7.1 <br>
 
