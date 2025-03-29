@@ -140,7 +140,7 @@ neigbor 6.6.6.2 remote-as 300 <br>
 neighbor 4.4.4.2 remote-as 200 <br>
 network 1.1.1.0 mask 255.255.255.0 <br>
 network 1.1.2.0 mask 255.255.255.0 <br>
-netowrk 4.4.4.0 mask 255.255.255.0 <br>
+network 4.4.4.0 mask 255.255.255.0 <br>
 netowrk 6.6.6.0 mask 255.255.255.0 <br>
 
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r3%20-%20show%20ip%20route.png)
@@ -281,7 +281,7 @@ neighbor 4.4.4.1 remote-as 100
 neigbor 5.5.5.2 remote-as 300
 network 5.5.5.0 mask 255.255.255.0
 network 4.4.4.0 mask 255.255.255.0
-netowrk 2.2.1.0 mask 255.255.255.0
+network 2.2.1.0 mask 255.255.255.0
 
 interface serial 3/2
 no shutdown
@@ -294,7 +294,7 @@ network 11.11.11.0 mask 255.255.255.0
 exit
 
 router eigrp 10
-netowrk 11.11.11.0
+network 11.11.11.0
 address-amily ipv4
 redistribute static
 
@@ -432,9 +432,9 @@ router bgp 300
 neighbor 5.5.5.1 remote-as 200
 neighbor 6.6.6.1 remote-as 100
 network 6.6.6.0 mask 255.255.255.0
-netowrk 5.5.5.0 mask 255.255.255.0
+network 5.5.5.0 mask 255.255.255.0
 network 3.3.2.0 mask 255.255.255.0
-netowrk 3.3.1.0 mask 255.255.255.0
+network 3.3.1.0 mask 255.255.255.0
 
 interface serial 3/2
 no shutdown
@@ -447,7 +447,7 @@ default-information originate
 
 router bgp 1
 neighbor 7.7.7.1 remote-as 500
-netowrk 7.7.7.0 mask 255.255.255.0
+network 7.7.7.0 mask 255.255.255.0
 exit
 
 ip route 0.0.0.0 0.0.0.0 7.7.7.1
@@ -478,8 +478,8 @@ exit
 router ospf 1
 router-id 1.1.1.7
 network 3.3.2.0 0.0.0.255 area 10
-netowrk 3.3.3.0 0.0.0.255 area 10
-netowrk 10.100.100.0 0.0.0.255 area 10
+network 3.3.3.0 0.0.0.255 area 10
+network 10.100.100.0 0.0.0.255 area 10
 exit
 
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r8%20-%20show%20ip%20interface%20brief.png)
@@ -511,8 +511,8 @@ exit
 
 router ospf 1
 router-id 1.1.1.8
-netowrk 3.3.1.0 0.0.0.255 area 10
-netowrk 3.3.3.0 0.0.0.255 area 10
+network 3.3.1.0 0.0.0.255 area 10
+network 3.3.3.0 0.0.0.255 area 10
 network 10.10.101.0 0.0.0.255 area 10
 exit
 
@@ -550,56 +550,56 @@ no shutdown
 exit
 
 router bgp 500
-neigbhor 7.7.7.2 remote-as 300
-neigbor 9.9.9.2 remote as 100
-neighbor 11.11.11.2 remote-as 200
-noetwork 9.9.9.0 mask 255.255.255.0
-netowrk 11.11.11.0 mask 255.255.255.0
-netowrk 7.7.7.0 mask 255.255.255.0
+neigbhor 7.7.7.2 remote-as 300 <br>
+neigbor 9.9.9.2 remote as 100 <br>
+neighbor 11.11.11.2 remote-as 200 <br>
+noetwork 9.9.9.0 mask 255.255.255.0 <br>
+network 11.11.11.0 mask 255.255.255.0 <br>
+network 7.7.7.0 mask 255.255.255.0 <br>
 
-ip route 192.168.100.0 255.255.255.0 9.9.9.2
-ip route 192.168.101.0 255.255.255.0 9.9.9.2
-ip route 192.168.102.0 255.255.255.0 9.9.9.2
-ip route 192.168.103.0 255.255.255.0 9.9.9.2
-ip route 172.16.0.0 255.255.0.0 11.11.11.2
-ip route 10.0.0.0 255.0.0.0 7.7.7.2
-ip route 0.0.0.0 0.0.0.0 192.168.2.1
+ip route 192.168.100.0 255.255.255.0 9.9.9.2 <br>
+ip route 192.168.101.0 255.255.255.0 9.9.9.2 <br>
+ip route 192.168.102.0 255.255.255.0 9.9.9.2 <br>
+ip route 192.168.103.0 255.255.255.0 9.9.9.2 <br>
+ip route 172.16.0.0 255.255.0.0 11.11.11.2 <br>
+ip route 10.0.0.0 255.0.0.0 7.7.7.2 <br>
+ip route 0.0.0.0 0.0.0.0 192.168.2.1 <br>
 
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r10%20-show%20ip%20route.png)
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r10%20show%20ip%20interface%20brief.png)
 ### Router 10 (R10 - Müşteri Router'ı) Konfigürasyonu
 
-interface fastEthernet 0/0
-ip address 192.168.200.1 255.255.255.0
-no shutdown
-exit
+interface fastEthernet 0/0 <br>
+ip address 192.168.200.1 255.255.255.0 <br>
+no shutdown <br>
+exit <br>
 
-interface fastEThernet 0/1
-no shutdown
-pppoe enable
-pppoe-client dial-pool-number 1
-exit
+interface fastEThernet 0/1 <br>
+no shutdown <br>
+pppoe enable <br> 
+pppoe-client dial-pool-number 1 <br>
+exit <br>
 
-interface dialer 1
-mtu 1492
-ip address negotiated
-encapsualiton ppp
-dialer pool 1
-ppp authentication chap callin
-ppp chap hostname test
-ppp chap password CCNA
-exit
+interface dialer 1 <br>
+mtu 1492 <br>
+ip address negotiated <br> 
+encapsualiton ppp <br>
+dialer pool 1 <br>
+ppp authentication chap callin <br>
+ppp chap hostname test <br>
+ppp chap password CCNA <br>
+exit <br>
 
-ip route 0.0.0.0 0.0.0.0 dialer 1
-interface fastethernet 0/1
-ip nat outside
-exit
+ip route 0.0.0.0 0.0.0.0 dialer 1 <br>
+interface fastethernet 0/1 <br>
+ip nat outside <br>
+exit <br>
 
-interface fastethernet 0/0
-ip nat inside
-exit
+interface fastethernet 0/0 <br>
+ip nat inside <br>
+exit <br>
 
-ip nat inside source static 192.168.200.10 10.101.0.50
+ip nat inside source static 192.168.200.10 10.101.0.50 <br>
 
 ## Katkıda Bulunma
 
