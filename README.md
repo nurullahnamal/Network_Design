@@ -278,7 +278,7 @@ network 2.2.1.0 <br>
 
 router bgp 200
 neighbor 4.4.4.1 remote-as 100
-neigbor 5.5.5.2 remote-as 300
+neighbor 5.5.5.2 remote-as 300
 network 5.5.5.0 mask 255.255.255.0
 network 4.4.4.0 mask 255.255.255.0
 network 2.2.1.0 mask 255.255.255.0
@@ -441,46 +441,47 @@ no shutdown
 ip addres 7.7.7.2 255.255.255.0
 exit
 
-router ospf 1
-network 7.7.7.0 0.0.0.255
-default-information originate
+router ospf 1 <br>
+network 7.7.7.0 0.0.0.255 <br>
+default-information originate <br>
+router bgp 1 <br>
+neighbor 7.7.7.1 remote-as 500 <br>
+network 7.7.7.0 mask 255.255.255.0 <br>
+exit <br>
 
-router bgp 1
-neighbor 7.7.7.1 remote-as 500
-network 7.7.7.0 mask 255.255.255.0
-exit
+ip route 0.0.0.0 0.0.0.0 7.7.7.1 <br>
 
-ip route 0.0.0.0 0.0.0.0 7.7.7.1
-
-router bgp 300
-network 10.10.101.0 mask 255.255.255.0
-network 10.100.100.0 mask 255.255.255.0
-end write
+router bgp 300 <br>
+network 10.10.101.0 mask 255.255.255.0 <br>
+network 10.100.100.0 mask 255.255.255.0 <br>
+end <br> 
+write <br>
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r7%20-%20show%20ip%20interface%20brief.png)
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r7%20-%20show%20ip%20interface%20brief.png)
 ### Router 7 (R7) Konfigürasyonu
 
-enable conf termınal
-interface fastEthernet 0/0
-no shutdown
-ip addres 10.100.100.1 255.255.255.0
-exit
-interface serial 2/0
-no shutdown
-ip addres 3.3.2.2 255.255.255.0
-exit
+enable <br>
+configure  terminal <br>
+interface fastEthernet 0/0 <br>
+no shutdown <br>
+ip addres 10.100.100.1 255.255.255.0 <br>
+exit <br>
+interface serial 2/0 <br>
+no shutdown <br>
+ip addres 3.3.2.2 255.255.255.0 <br>
+exit <br>
+ 
+interface serial 2/1 <br>
+no shutdown <br>
+ip addres 3.3.3.1 <br>
+exit <br>
 
-interface serial 2/1
-no shutdown
-ip addres 3.3.3.1
-exit
-
-router ospf 1
-router-id 1.1.1.7
-network 3.3.2.0 0.0.0.255 area 10
-network 3.3.3.0 0.0.0.255 area 10
-network 10.100.100.0 0.0.0.255 area 10
-exit
+router ospf 1 <br>
+router-id 1.1.1.7 <br>
+network 3.3.2.0 0.0.0.255 area 10 <br>
+network 3.3.3.0 0.0.0.255 area 10 <br>
+network 10.100.100.0 0.0.0.255 area 10 <br>
+exit <br> 
 
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r8%20-%20show%20ip%20interface%20brief.png)
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r8%20-%20show%20ip%20route.png)
@@ -492,29 +493,29 @@ download
 Use code with caution.
 IGNORE_WHEN_COPYING_END
 
-enable , configure terminal
+enable  <br>
+configure terminal  <br>
+interface fastEthernet 0/0 <br>
+no shutdown  <br>
+ip addres 10.10.101.1 255.255.255.0 <br>
+exit <br>
 
-interface fastEthernet 0/0
-no shutdown
-ip addres 10.10.101.1 255.255.255.0
-exit
+interface serial 2/1 <br>
+NO SHUTDOWN <br>
+ip address 3.3.3.2 255.255.255.0 <br>
+exit <br>
 
-interface serial 2/1
-NO SHUTDOWN
-ip addres 3.3.3.2 255.255.255.0
-exit
+interface serial 2/0 <br>
+NO SHUTDOWN <br>
+ip addres 3.3.1.2 255.255.255.0 <br>
+exit <br>
 
-interface serial 2/0
-NO SHUTDOWN
-ip addres 3.3.1.2 255.255.255.0
-exit
-
-router ospf 1
-router-id 1.1.1.8
-network 3.3.1.0 0.0.0.255 area 10
-network 3.3.3.0 0.0.0.255 area 10
-network 10.10.101.0 0.0.0.255 area 10
-exit
+router ospf 1 <br>
+router-id 1.1.1.8 <br>
+network 3.3.1.0 0.0.0.255 area 10 <br>
+network 3.3.3.0 0.0.0.255 area 10 <br>
+network 10.10.101.0 0.0.0.255 area 10 <br>
+exit <br>
 
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r9%20show%20bgp%20summary.png)
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/r9%20show%20ip%20interface%20brief.png)
@@ -527,29 +528,29 @@ download
 Use code with caution.
 IGNORE_WHEN_COPYING_END
 
-conf terminal
-interfaca serial 2/2
-no shutdown
-ip address 7.7.7.1 255.255.255.0
-exit
+configure  terminal <br>
+interfaca serial 2/2 <br>
+no shutdown <br>
+ip address 7.7.7.1 255.255.255.0 <br>
+exit <br>
 
-interface serial 2/0
-no shutwon
-ip address 9.9.9.1 255.255.255.0
-exit
+interface serial 2/0 <br>
+no shutwon <br>
+ip address 9.9.9.1 255.255.255.0 <br>
+exit <br>
 
-interface serial 2/1
-no shutdown
-ip addres 11.11.11.1 255.255.255.0
-exit
+interface serial 2/1 <br>
+no shutdown <br>
+ip addres 11.11.11.1 255.255.255.0 <br>
+exit <br>
 
-configure termainal
-interface fastEthernet 0/0
-ip address 192.168.1.210 255.255.255.0
-no shutdown
-exit
+configure termainal <br>
+interface fastEthernet 0/0 <br>
+ip address 192.168.1.210 255.255.255.0 <br>
+no shutdown <br> 
+exit <br>
 
-router bgp 500
+router bgp 500 <br>
 neigbhor 7.7.7.2 remote-as 300 <br>
 neigbor 9.9.9.2 remote as 100 <br>
 neighbor 11.11.11.2 remote-as 200 <br>
