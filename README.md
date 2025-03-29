@@ -59,8 +59,8 @@ Aşağıda her bir router'ın konfigürasyonlarının tamamı yer almaktadır.
 ![image alt](https://github.com/nurullahnamal/A-Yap-land-rmas-ve-Dinamik-Y-nlendirme/blob/main/R1-%20show%20ip%20interface%20brief.png)
 
 enable <br>
-config terminal <br>
-interface fastethernet 0/0 <br>
+configure  terminal <br>
+interface fastEthernet 0/0 <br> 
 ip address 192.168.100.1 255.255.255.0 <br>
 no shutdown <br>
 interface fastethernet 0/1 <br>
@@ -88,7 +88,7 @@ Use code with caution.
 IGNORE_WHEN_COPYING_END
 
 enable <br>
-config terminal <br>
+configure terminal <br>
 interface multilink 1 <br>
 no shutdown <br>
 ip address 1.1.1.2 255.255.255.0 <br>
@@ -107,8 +107,8 @@ interface serial 2/3 <br>
 no ip address
 no shut down <br>
 encapsulation ppp <br>
-ppp multinlik <br>
-ppp multinlk group 1 <br>
+ppp multilink <br>
+ppp multilink group 1 <br>
 
 interface multilink 2 <br>
 no shutdown <br>
@@ -118,9 +118,9 @@ ppp multilink group 2 <br>
 
 interface serial 2/0 <br>
 no ip address <br>
-encapsualion ppp <br>
-ppp multink <br>
-ppp multink gorup 2 <br>
+encapsulation ppp <br>
+ppp multilink <br>
+ppp multilink gorup 2 <br>
 no shutdown <br>
 
 interface serial 2/1 <br>
@@ -162,7 +162,7 @@ ppp multinlk group 1 <br>
 interface serial 2/0 <br>
 no shutdown <br>
 no ip address <br>
-encalsupaion ppp <br>
+encapsulation ppp <br>
 ppp multink <br>
 ppp multink group 1 <br>
 exit <br>
@@ -220,7 +220,7 @@ exit <br>
 interface serial 2/1 <br>
 no ip address <br>
 no shudown <br>
-encapsualion ppp <br>
+encapsulation ppp <br>
 ppp multilink <br> 
 ppp multink group 1 <br>
 
@@ -235,7 +235,7 @@ exit <br>
 interface serial 3/0 <br>
 no shutdown <br>
 no ip address <br>
-encapsualtion ppp <br>
+encapsulation ppp <br>
 ppp mutlink <br>
 ppp multink group 2 <br>
 exit <br>
@@ -243,7 +243,7 @@ exit <br>
 interface serial 3/1 <br>
 no shutdown <br>
 no ip address <br>
-encapsualtion ppp <br>
+encapsulation ppp <br>
 ppp mutlink <br>
 ppp multink group 2 <br>
 exit <br>
@@ -266,7 +266,7 @@ exit <br>
 interface serial 2/3 <br>
 no ip address <br>
 no shutdown <br>
-encapsualion ppp <br> 
+encapsulation ppp <br> 
 ppp mutlink <br>
 ppp multink group 3 <br>
 
@@ -387,7 +387,7 @@ exit
 interface serial 2/2
 no shutdown
 no ip address
-encapsulaion ppp
+encapsulation ppp
 ppp multilink
 ppp multink group 1
 exit
@@ -395,7 +395,7 @@ exit
 interface serial 2/3
 no shutdown
 no ip address
-encapsulaiyon ppp
+encapsulation ppp
 ppp mulitnk
 ppp muıltink group 1
 exit
