@@ -5,7 +5,7 @@ Ağ Yapılandırması ve Dinamik Yönlendirme
 # Ağ Topolojisi ve Yapılandırma Deposu
 Bu yapılandırma dosyası, farklı yönlendirme protokolleri ve ağ servislerini içeren bir ağ topolojisini tanımlar. İçerikte BGP, OSPF, EIGRP, PPPoE, CHAP ve Multilink gibi önemli ağ protokolleri bulunmaktadır.
 
-İçerik Başlıkları
+
 #  1. Ağ Yapılandırması (Network Configuration)
 Tanımlanan IP ağları ve subnet mask bilgileri
 
