@@ -15,7 +15,7 @@ BGP yönlendirme protokolü
  Otonom sistemler (AS) arasında bağlantılar
  Komşu (neighbor) yapılandırmaları
 
-# 3. OSPF (Open Shortest Path First) Yapılandırması
+# 3. OSPF (Open Shortest Path First) Yapılandırması 
 OSPF yönlendirme protokolü
 Alan (area) bazlı yönlendirme
 
